@@ -1,7 +1,10 @@
 "use stric"
 
 
-let monthArr = ['sausis', 'vasaris', 'kovas', 'balandis', 'geguze', 'birzelis', 'liepa', 'rugpjutis', 'rugsejis', 'spalis', 'lapkritis', 'gruodis']
+let monthArr = ['spalis', 'sausis', 'kovas', 'liepa', 'vasaris', 'geguze', 'rugsejis', 'balandis',  'birzelis', 'lapkritis', 'rugpjutis',  'gruodis']
+
+
+
 
 function generateTable(dataAccount){
     let HTML = '';
@@ -14,7 +17,7 @@ for (let i = 0; i< dataAccount.length; i++){
     HTML += `
         <div class="table-row">
             <div class="cell">I</div>
-            <div class="cell">${dataAccount[i].month}</div>
+            <div class="cell">${monthArr[i]}</div>
             <div class="cell">${dataAccount[i].income}</div>
             <div class="cell">${dataAccount[i].expense}</div>
             <div class="cell"></div>
@@ -27,6 +30,8 @@ for (let i = 0; i< dataAccount.length; i++){
     return tableContent.innerHTML = HTML;
 
 }
+
+
 
 generateTable(account)
 
