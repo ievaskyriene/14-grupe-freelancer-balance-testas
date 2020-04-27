@@ -17,7 +17,7 @@ for (let i = 0; i< dataAccount.length; i++){
             <div class="cell">${dataAccount[i].month}</div>
             <div class="cell">${dataAccount[i].income}</div>
             <div class="cell">${dataAccount[i].expense}</div>
-            <div class="cell">150.00 Eur</div>
+            <div class="cell"></div>
         </div>
     `
     }
@@ -29,5 +29,21 @@ for (let i = 0; i< dataAccount.length; i++){
 }
 
 generateTable(account)
+
+
+function generateSummary(data){
+    let biggestMonth = 1;
+    for (let j = 0; j<data.length; j++){
+      if (biggestMonth > data[j].income){
+          biggestMonth = data[j].income
+      }
+    
+      return biggestMonth
+    
+    }
+   
+}
+
+generateSummary(account)
 
 
