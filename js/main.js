@@ -4,8 +4,6 @@
 let monthArr = ['spalis', 'sausis', 'kovas', 'liepa', 'vasaris', 'geguze', 'rugsejis', 'balandis',  'birzelis', 'lapkritis', 'rugpjutis',  'gruodis']
 
 
-
-
 function generateTable(dataAccount){
     let HTML = '';
     if (!Array.isArray(dataAccount)){
@@ -30,7 +28,6 @@ for (let i = 0; i< dataAccount.length; i++){
     return tableContent.innerHTML = HTML;
 
 }
-
 
 
 generateTable(account)
