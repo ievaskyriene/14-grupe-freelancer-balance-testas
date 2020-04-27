@@ -101,13 +101,6 @@ function TableFooter(dataFooter){
 
         totalBalance = totalIncome - totalExpense;
 
-       
-
-     
-           
-        
-
-
     }
 
     return footer.innerHTML = HTML
